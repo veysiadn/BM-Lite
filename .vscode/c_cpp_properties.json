@@ -1,8 +1,8 @@
 {
     "configurations": [
         {
-            "name": "Linux",
-            "defines": ["BMLITE_ON_UART", "NRF52840_XXAA", "BOARD_PCA10056", "BMLITE_USE_CALLBACK"],
+            "name": "STM32-BMLITE",
+            "defines": ["BMLITE_ON_UART", "BMLITE_USE_CALLBACK"],
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "${default}",
@@ -11,7 +11,8 @@
                 "-mcpu=cortex-m4",
                 "-mthumb",
                 "-mfloat-abi=hard"
-            ]
+            ],
+            "includePath" : ["${workspaceFolder}/**"]
        }
     ],
     "version": 4
